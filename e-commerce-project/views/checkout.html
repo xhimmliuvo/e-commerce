@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <form id="checkout-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+        
+        <label for="payment">Payment Method:</label>
+        <select id="payment" required>
+            <option value="COD">Cash on Delivery</option>
+            <option value="UPI">UPI</option>
+        </select>
+        
+        <button type="submit">Place Order</button>
+    </form>
+    <script src="checkout.js"></script>
+</body>
+</html>
